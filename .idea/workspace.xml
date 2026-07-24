@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e8d6f0e-5a0f-4edc-b103-a4dae0818d27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Task10_Tapsirig1.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Task10_Tapsirig1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Main.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3GU1aL7x0JAwC7zXUSJRsi0KYb2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.Task7_Tapsirig2.executor": "Run",
+    "Application.Task7_Tapsirig4.executor": "Run",
+    "Application.Task7_Tapsirig5.executor": "Run",
+    "Application.Task7_Tapsirig6.executor": "Run",
+    "Application.Task7_Tapsirig7.executor": "Run",
+    "Application.Task7_Tapsirig8.executor": "Run",
+    "Application.Task7_Tapsirig9.executor": "Run",
+    "Application.Task8_Tapsirig1.executor": "Run",
+    "Application.Task8_Tapsirig10.executor": "Run",
+    "Application.Task8_Tapsirig11.executor": "Run",
+    "Application.Task8_Tapsirig12.executor": "Run",
+    "Application.Task8_Tapsirig2.executor": "Run",
+    "Application.Task8_Tapsirig3.executor": "Run",
+    "Application.Task8_Tapsirig4.executor": "Run",
+    "Application.Task8_Tapsirig5.executor": "Run",
+    "Application.Task8_Tapsirig6.executor": "Run",
+    "Application.Task8_Tapsirig7.executor": "Run",
+    "Application.Task8_Tapsirig8.executor": "Run",
+    "Application.Task8_Tapsirig9.executor": "Run",
+    "Application.Task9_Tapsirig1.executor": "Run",
+    "Application.Task9_Tapsirig2.executor": "Run",
+    "Application.Task9_Tapsirig3.executor": "Run",
+    "Application.Task9_Tapsirig4.executor": "Run",
+    "Application.Task9_Tapsirig5.executor": "Run",
+    "Application.Task9_Tapsirig6.executor": "Run",
+    "Application.Task9_Tapsirig7.executor": "Run",
+    "Application.Task9_Tapsirig8.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Task10__Tapsirig1",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Fatima Camalova/IdeaProjects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Fatima Camalova/IdeaProjects/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "two.files.diff.last.used.folder": "C:/Users/Fatima Camalova/IdeaProjects/src",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e8d6f0e-5a0f-4edc-b103-a4dae0818d27" name="Changes" comment="" />
+      <created>1784011396701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784011396701</updated>
+      <workItem from="1784011398777" duration="380000" />
+      <workItem from="1784014362386" duration="4014000" />
+      <workItem from="1784112801056" duration="19237000" />
+      <workItem from="1784264841685" duration="2565000" />
+      <workItem from="1784463835786" duration="8791000" />
+      <workItem from="1784652354239" duration="3660000" />
+      <workItem from="1784716411471" duration="6625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
