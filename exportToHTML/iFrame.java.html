@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>iFrame.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+iFrame.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">openqa</span><span class="s2">.</span><span class="s1">selenium</span><span class="s2">.</span><span class="s1">By</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">openqa</span><span class="s2">.</span><span class="s1">selenium</span><span class="s2">.</span><span class="s1">WebDriver</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">openqa</span><span class="s2">.</span><span class="s1">selenium</span><span class="s2">.</span><span class="s1">WebElement</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">openqa</span><span class="s2">.</span><span class="s1">selenium</span><span class="s2">.</span><span class="s1">chrome</span><span class="s2">.</span><span class="s1">ChromeDriver</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">openqa</span><span class="s2">.</span><span class="s1">selenium</span><span class="s2">.</span><span class="s1">support</span><span class="s2">.</span><span class="s1">ui</span><span class="s2">.</span><span class="s1">ExpectedConditions</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">org</span><span class="s2">.</span><span class="s1">openqa</span><span class="s2">.</span><span class="s1">selenium</span><span class="s2">.</span><span class="s1">support</span><span class="s2">.</span><span class="s1">ui</span><span class="s2">.</span><span class="s1">WebDriverWait</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">time</span><span class="s2">.</span><span class="s1">Duration</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">iFrame </span><span class="s2">{</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+
+        <span class="s1">WebDriver driver </span><span class="s2">= </span><span class="s0">new </span><span class="s1">ChromeDriver</span><span class="s2">();</span>
+
+        <span class="s0">try </span><span class="s2">{</span>
+
+            <span class="s1">driver</span><span class="s2">.</span><span class="s1">manage</span><span class="s2">().</span><span class="s1">window</span><span class="s2">().</span><span class="s1">maximize</span><span class="s2">();</span>
+
+            <span class="s1">driver</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s3">&quot;https://anarabbas.com/labs/auto-lab&quot;</span><span class="s2">);</span>
+
+            <span class="s1">WebDriverWait wait </span><span class="s2">= </span><span class="s0">new </span><span class="s1">WebDriverWait</span><span class="s2">(</span>
+                    <span class="s1">driver</span><span class="s2">,</span>
+                    <span class="s1">Duration</span><span class="s2">.</span><span class="s1">ofSeconds</span><span class="s2">(</span><span class="s4">10</span><span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s5">// 1. iFRAME BÖLMƏSİNƏ GƏL</span>
+
+            <span class="s1">WebElement iframeSection </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">elementToBeClickable</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//*[contains(text(),'iFrame')]&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s1">iframeSection</span><span class="s2">.</span><span class="s1">click</span><span class="s2">();</span>
+
+
+            <span class="s5">// 2. ƏSAS iFRAME-Ə KEÇ</span>
+
+            <span class="s1">WebElement frame </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">presenceOfElementLocated</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//iframe&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s1">driver</span><span class="s2">.</span><span class="s1">switchTo</span><span class="s2">().</span><span class="s1">frame</span><span class="s2">(</span><span class="s1">frame</span><span class="s2">);</span>
+
+            <span class="s5">// 3. FRAME İÇİNDƏ TEXT FIELD</span>
+
+            <span class="s1">WebElement textBox </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">visibilityOfElementLocated</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//input&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s1">textBox</span><span class="s2">.</span><span class="s1">sendKeys</span><span class="s2">(</span><span class="s3">&quot;Fatime&quot;</span><span class="s2">);</span>
+
+            <span class="s5">// 4. FRAME İÇİNDƏ DÜYMƏ</span>
+
+            <span class="s1">WebElement frameButton </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">elementToBeClickable</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//button&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s1">frameButton</span><span class="s2">.</span><span class="s1">click</span><span class="s2">();</span>
+
+
+            <span class="s5">// 5. NESTED FRAME-Ə KEÇ</span>
+
+            <span class="s1">WebElement nestedFrame </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">presenceOfElementLocated</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//iframe&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s1">driver</span><span class="s2">.</span><span class="s1">switchTo</span><span class="s2">().</span><span class="s1">frame</span><span class="s2">(</span><span class="s1">nestedFrame</span><span class="s2">);</span>
+
+            <span class="s5">// 6. NESTED FRAME DAXİLİNDƏ DÜYMƏ</span>
+
+            <span class="s1">WebElement nestedButton </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">elementToBeClickable</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//button&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+            <span class="s1">nestedButton</span><span class="s2">.</span><span class="s1">click</span><span class="s2">();</span>
+
+
+            <span class="s5">// 7. ƏSAS SƏHİFƏYƏ QAYIT</span>
+
+            <span class="s1">driver</span><span class="s2">.</span><span class="s1">switchTo</span><span class="s2">().</span><span class="s1">defaultContent</span><span class="s2">();</span>
+
+            <span class="s5">// 8. ƏSAS SƏHİFƏDƏ ELEMENT TAP</span>
+
+
+            <span class="s1">WebElement mainPageElement </span><span class="s2">= </span><span class="s1">wait</span><span class="s2">.</span><span class="s1">until</span><span class="s2">(</span>
+                    <span class="s1">ExpectedConditions</span><span class="s2">.</span><span class="s1">visibilityOfElementLocated</span><span class="s2">(</span>
+                            <span class="s1">By</span><span class="s2">.</span><span class="s1">xpath</span><span class="s2">(</span><span class="s3">&quot;//*[contains(text(),'iFrame')]&quot;</span><span class="s2">)</span>
+                    <span class="s2">)</span>
+            <span class="s2">);</span>
+
+
+            <span class="s5">// 9. QAYITDIĞIMIZI SÜBUT ET</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span>
+                    <span class="s3">&quot;Əsas səhifəyə qayıtdıq: &quot;</span>
+                            <span class="s2">+ </span><span class="s1">mainPageElement</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">()</span>
+            <span class="s2">);</span>
+
+
+        <span class="s2">} </span><span class="s0">finally </span><span class="s2">{</span>
+
+            <span class="s5">// 10. CHROME-U BAĞLA</span>
+
+            <span class="s1">driver</span><span class="s2">.</span><span class="s1">quit</span><span class="s2">();</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
